@@ -1,2 +1,6 @@
-ansible.builtin.debug:
-  msg: "Hello there"
+- name: Hello world
+  hosts: all
+  tasks:
+    - name: Hello
+      debug:
+        msg: "HELLO THERE"

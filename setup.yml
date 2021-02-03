@@ -1,5 +1,2 @@
-- name: test
-  hosts: all
-  tasks:
-    ansible.builtin.debug:
-      msg: "Hello there"
+ansible.builtin.debug:
+  msg: "Hello there"

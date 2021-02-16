@@ -1,6 +1,7 @@
 - name: Hello world
   hosts: all
   tasks:
-    - name: Hello
-      debug:
-        msg: "HELLO THERE"
+    - name: Upgrade all packages
+        yum:
+          name: '*'
+          state: latest

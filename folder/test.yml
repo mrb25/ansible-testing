@@ -1,0 +1,7 @@
+- name: Hello world
+  hosts: all
+  tasks:
+    name: Remove the Apache package
+    yum:
+      name: httpd
+      state: absent
